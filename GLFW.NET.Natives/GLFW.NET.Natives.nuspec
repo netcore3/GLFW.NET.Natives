@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.12">
+    <id>GLFW.NET.Natives</id>
+    <version>1.0.0</version>
+    <title>GLFW.NET.Natives</title>
+    <authors>Dimitri Laslo</authors>
+    <owners>NetCore3</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>img\iconpackag.png</icon>
+    <description>This package contains all  you need for a working GLFW.NET environement with .NET Core. This is multiplatform implementation (64bits) for Linux, macOS and Windows.</description>
+    <summary>Full GLFW.NET package for .NET Core OpenGL development.</summary>
+    <copyright>Copyright © NetCore3</copyright>
+    <language></language>
+    <license type="file">license\license.txt</license>
+    <tags>GLFW OpenGL OpenGLES C# Csharp CS Windows Linux macOS Context NET Standard Core Framework Game Native Form Cross Platform Unix netcore netstandard dotnet winform</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="glfw-net" version="3.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="img\iconpackag.png" target="img\iconpackag.png" />
+    <file src="license\license.txt" target="license\license.txt" />
+    <file src="runtimes\linux-x64\native\libglfw.so.3" target="runtimes\linux-x64\native\libglfw.so.3" />
+    <file src="runtimes\osx-x64\native\libglfw.3.dylib" target="runtimes\osx-x64\native\libglfw.3.dylib" />
+    <file src="runtimes\win-x64\native\glfw.dll" target="runtimes\win-x64\native\glfw.dll" />
+    <file src="runtimes\win-x86\native\glfw.dll" target="runtimes\win-x86\native\glfw.dll" />
+  </files>
+</package>
